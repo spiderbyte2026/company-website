@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiderByte | Futuristic Web & App Development</title>
+    <meta name="description" content="SpiderByte is a modern software and web development startup specializing in cutting-edge digital experiences.">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-spider"></i></span>
+                Spider<span class="highlight">Byte</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="btn-outline">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1 class="glitch-text" data-text="We Weave The Digital Future">We Weave The <br><span class="highlight">Digital Future</span></h1>
+            <p class="hero-subtitle">SpiderByte is a premium software & web development agency creating immersive, high-performance digital ecosystems.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary glow-btn">Explore Services</a>
+                <a href="#contact" class="btn-secondary">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal slide-right">
+                    <div class="glass-orb">
+                        <i class="fa-solid fa-microchip neon-icon"></i>
+                    </div>
+                </div>
+                <div class="about-text reveal slide-left">
+                    <h2 class="section-title">Who We <span class="highlight">Are</span></h2>
+                    <p>At SpiderByte, we don't just build software; we engineer digital experiences that captivate and perform. Born from a vision of bringing futuristic design and bleeding-edge technology together, we help startups and enterprises alike dominate their digital space.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-double"></i> Scalable Architectures</li>
+                        <li><i class="fa-solid fa-check-double"></i> Premium UI/UX Design</li>
+                        <li><i class="fa-solid fa-check-double"></i> Next-Gen AI Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Our <span class="highlight">Services</span></h2>
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card glass-card reveal slide-up" data-delay="100">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>High-performance, beautifully animated, and responsive web applications built with the latest technologies.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            
+                <!-- Card 3 -->
+                <div class="service-card glass-card reveal slide-up" data-delay="300">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Integrate cutting-edge Artificial Intelligence to automate processes and unlock new business capabilities.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Banner Section -->
+    <section class="stats-banner glass-panel reveal">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3 class="counter" data-target="0">0</h3>
+                <p>Projects Delivered</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="1">0</h3>
+                <p>Expert Developers</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="99">0</h3>
+                <p>Client Satisfaction %</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper glass-card reveal">
+                <div class="contact-info">
+                    <h2>Ready to <span class="highlight">Connect?</span></h2>
+                    <p>Let's build the future together. Drop us a line and our team will get back to you within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>spiderbyte2026@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Chennai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" name="message" required placeholder=" "></textarea>
+                            <label for="message">Project Details</label>
+                        </div>
+                        <button type="submit" class="btn-primary glow-btn w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-spider"></i></span>
+                    Spider<span class="highlight">Byte</span>
+                </a>
+                <p>Weaving the digital future, one byte at a time.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/anand-k-b2b206321"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Anandk703 "><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SpiderByte. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
